@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>網頁設計</title>
+</head>
+
+<body>
+    <form>
+        姓名: <input type="text" name="name"><br>
+        電話: <input type="text" name="tel"><br>
+        年紀: <input type="text" name="age"><br>
+        <input type="submit">
+        <input type="reset" value="取消"><br>
+
+        <hr>
+        <span>以下按鈕用處皆一樣</span><br>
+        <button>送出</button><br>
+        <input type="button" value="送出"><br>
+        <button type="button">送出</button><br>
+
+        <hr>
+
+        <button type="button" disabled>無法按下</button><br>
+        <button onclick="alert('早安')">送出</button><br>
+
+        <hr>
+
+        姓名: <input type="text" name="name"><br>
+        電話: <input type="text" name="tel"><br>
+        <button onclick="alert('註冊成功')">送出</button>
+        <input type="reset" value="取消"><br>
+
+        <hr>
+        <input type="radio" name="dept">
+        <label>資訊工程系</label><br>
+        <input type="radio" name="dept">
+        <label>電機工程系</label><br>
+        <input type="radio" name="tea">
+        <label>紅茶</label><br>
+        <input type="radio" name="tea">
+        <label>綠茶</label><br>
+        <input type="submit" value="確定">
+
+
+        <hr>
+
+        <textarea>請在此輸入資料</textarea><br>
+        <textarea placeholder="請在此輸入資料"></textarea><br>
+        <textarea readonly>無法刪除</textarea><br>
+        <textarea placeholder="自行輸入" rows="4" col="30"></textarea><br>
+
+        <hr>
+
+        <fieldset>
+            <legend>個人基本資料</legend>
+            姓名: <input type="text" name="name"><br>
+            電話: <input type="text" name="tel"><br>
+            年紀: <input type="text" name="age"><br>
+            <select>
+                <option value="1">資訊工程系</option>
+                <option value="2">電子工程系</option>
+                <option value="3">電機工程系</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>興趣</legend>
+            <input type="radio" name="inat">
+            <label>打籃球</label>
+            <input type="radio" name="inst">
+            <label>踢足球</label>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
