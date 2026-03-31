@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>網頁設計</title>
+
+<body>
+    <h1>活動參與者註冊</h1>
+    <form>
+        <fieldset>
+            <legend>帳號資訊</legend>
+            使用者名稱: <input type="text" name="name" placeholder="輸入姓名"><br><br>
+            電子郵件: <input type="text" placeholder="abc@mail.com" name="tel"><br><br>
+            設定密碼: <input type="text" placeholder="至少8個字元" name="age"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>個人詳細資料</legend>
+            性別:
+            <input type="radio" name="gander">
+            <label>男</label>
+            <input type="radio" name="gander">
+            <label>女</label><br><br>
+
+            可出席日期(複選)<br>
+            <input type="checkbox" name="date">
+            <label>2026-04-01(週三)</label><br>
+            <input type="checkbox" name="date">
+            <label>2026-04-02(週四)</label><br>
+            <input type="checkbox" name="date">
+            <label>2026-04-03(週五)</label><br><br>
+
+            最高學歷：
+            <select>
+                <option>高中</option>
+                <option selected>大學</option>
+                <option>博士</option>
+                <option>碩士</option>
+            </select><br><br>
+
+            自我介紹：
+            <div>
+                <textarea placeholder="請簡述你的履歷" rows="4" col="30"></textarea>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>個資條款</legend>
+            <input type="checkbox" name="chance">
+            <label>我已同意個人資料使用權利</label><br>
+        </fieldset>
+        <br>
+        <input type="reset" value="重填表單">
+        <button onclick="alert('註冊成功')">註冊</button>
+    </form>
+
+</body>
+
+</html>
