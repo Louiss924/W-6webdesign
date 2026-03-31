@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>網頁設計</title>
+</head>
+
+<body>
+    <!-- 下拉式選單尺寸 -->
+    <ol>
+        <li>下拉式選單尺寸設定=5
+            <div>
+                <select size="5">
+                    <option value="Programming">程式設計</option>
+                    <option value="Webdesign">網頁設計</option>
+                    <option value="Database">資料庫</option>
+                    <option value="DataStructure" selected>資料結構</option>
+                </select>
+            </div>
+        </li>
+
+        <hr>
+
+        <!-- 多選下拉式選單 -->
+        <li>可多選下拉式選單
+            <div>
+                <select multiple>
+                    <option value="Programming">程式設計</option>
+                    <option value="Webdesign">網頁設計</option>
+                    <option value="Database">資料庫</option>
+                    <option value="DataStructure" selected>資料結構</option><!-- 預設選項為資料結構 -->
+                </select>
+            </div>
+        </li>
+        <hr>
+
+
+        <!-- 選項分類 -->
+        <li>選項分類
+            <div>
+                <select>
+                    <optgroup label="程式類">
+                        < <option value="Programming">程式設計</option>
+                            <option value="Webdesign">網頁設計</option>/optgroup>
+                    <optgroup label="系統類">
+                        <option value="Database">資料庫</option>
+                        <option value="DataStructure">資料結構</option>
+                    </optgroup>
+                </select>
+            </div>
+        </li>
+
+        <hr>
+
+        <li>輸入字母會自動篩選選項
+            <div>
+                <input list="courses" name="course-menu">
+                <datalist id="courses">
+                    <option value="Programming">程式設計</option>
+                    <option value="Webdesign">網頁設計</option>
+                    <option value="Database">資料庫</option>
+                    <option value="DataStructure" selected>資料結構</option>
+                </datalist>
+            </div>
+        </li>
+    </ol>
+
+</body>
+
+</html>
